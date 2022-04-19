@@ -1,0 +1,818 @@
+
+<!-- saved from url=(0127)https://racing.hkjc.com/racing/information/Chinese/racing/RaceCard.aspx?RaceDate=%20%20%20%202022/02/20&Racecourse=ST&RaceNo=10 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>排位表 - 賽馬資訊 - 香港賽馬會</title>
+        <link href="https://racing.hkjc.com/racing/information/favicon.ico" rel="shortcut icon" type="image/x-icon">
+        <meta name="viewport" content="width=device-width">
+        <meta name="keywords">
+        
+        
+
+         
+            <link type="text/css" href="./race_card_files/Comm.aspx" rel="stylesheet"> 
+                <link type="text/css" href="./race_card_files/racing.aspx" rel="stylesheet">
+
+        <script type="text/javascript" src="./race_card_files/jquery-1.10.2.js.download"></script>
+        
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            $(".js_racecard_rt_num img").on("mouseover", function () {
+                var imgurl = $(this).attr("src");
+                var suffix = imgurl.substring(imgurl.lastIndexOf("."), imgurl.length);
+                var newimgurl = "";
+                if (imgurl.lastIndexOf("_o") < 0) {
+                    newimgurl = imgurl.substring(0, imgurl.lastIndexOf(".")) + "_r" + suffix;
+                    $(this).addClass("active");
+                    $(this).attr("src", newimgurl);
+                    $(this).attr("delSrc", imgurl);
+                }
+            })
+            $(".js_racecard_rt_num img").on("mouseout", function () {
+                if ($(this).hasClass("active")) {
+                    var imgurl = $(this).attr("delSrc");
+                    $(this).attr("src", imgurl);
+                }
+            })
+
+            $("img[id^=racecard_v3_btn][id$=_r]").mouseover(function () {
+                var imgurl = $(this).attr("src");
+                var suffix = imgurl.substring(imgurl.lastIndexOf("."), imgurl.length);
+                var newimgurl = "";
+                if (imgurl.indexOf("_r") < 0) {
+                    newimgurl = imgurl.substring(0, imgurl.lastIndexOf(".")) + "_r" + suffix;
+                    $(this).addClass("active");
+                    $(this).attr("src", newimgurl);
+                    $(this).attr("delSrc", imgurl);
+                }
+            })
+            $("img[id^=racecard_v3_btn][id$=_r]").mouseout(function () {
+                if ($(this).hasClass("active")) {
+                    var imgurl = $(this).attr("delSrc");
+                    $(this).attr("src", imgurl);
+                }
+            })
+                
+                $("input[type='checkbox'][value='評分']").on('change', function () {
+                    $("input[type='checkbox'][value='評分'][style='display: none;']").prop('checked', this.checked);
+                });
+                
+        });
+
+        function OpenPopWin(ps_Link, pv_Width, pv_Height, ps_Win) {
+            var randomnumber = Math.floor(Math.random() * 11);
+            var pv_Left = 20;
+            var pv_Top = 20;
+            var ls_options = "status=no,toolbar=no,menubar=no,location=no,scrollbars=no,resizable=yes,left=" + pv_Left + ",top=" + pv_Top + ",width=" + pv_Width + ",height=" + pv_Height;
+            window.open(ps_Link, randomnumber, ls_options);
+        }
+    </script>
+
+        
+<style type="text/css">
+
+         a.blueBtn1 {
+            display: inline-block;background: linear-gradient(#2B5DBA,#2958B0);
+            border-radius: 4px;
+            height:19px;
+            padding:2px 13px 0 13px;
+            margin-left: 3px;
+            font-weight: bold !important;
+            color:#fff !important;
+            font-family:Arial,Verdana,Helvetica,sans-serif;
+            font-size:11px;
+        }
+
+        .greyBtn {
+            display: inline-block;
+            background: linear-gradient(#ECECEC,#DEDEDE);    
+            border-radius: 4px;
+            height:19px;
+            padding:2px 13px 0 13px;
+            margin-left: 3px;
+            font-weight: bold !important;
+            color:#666 !important;
+            font-family:Arial,Verdana,Helvetica,sans-serif;
+            font-size:11px;
+        }
+
+        a.racecard_rt_num:hover {
+            text-decoration:none;
+        }
+
+        .date_title  {
+            margin-bottom:10px;
+            margin-top:5px;
+            background: url(/racing/Info/chinese/revamp/images/racing/dash.gif) repeat-x left bottom;
+            height:25px;
+            width:760px;
+            text-align:right;
+        }
+
+        .raceCard .top_races td {
+            padding: 1px;
+        }
+        .raceCard .commTitlePic {
+            display: inline-block;
+            width: 760px;
+        }
+
+        #racecardlist a, #standbylist a {
+            color: #03c;
+        }
+</style>
+
+        <style type="text/css">
+           
+        </style>
+        <script language="javascript">
+            var JcrwUrlPrefix = '/racing/Info';
+            var SSOCommonPath = '//common.hkjc.com/corporate/';
+
+            function OpenPopWinScroll(ps_Link, pv_Width, pv_Height, ps_Win) {
+                var pv_Left = 20;
+                var pv_Top = 20;
+                var ls_options = "status=no,toolbar=no,menubar=no,location=no,scrollbars=yes,resizable=yes,scrollbars=yes,left=" + pv_Left + ",top=" + pv_Top + ",width=" + pv_Width + ",height=" + pv_Height;
+                window.open(ps_Link, ps_Win, ls_options);
+            }
+        </script>
+    <style>.preview-highlight{border: 5px red dashed !important; margin: -5px !important;}</style><script src="./race_card_files/sdceo_zone_EWRRSR1C_banner.js.download"></script></head>
+    <body style="" data-new-gr-c-s-check-loaded="14.1050.0" data-gr-ext-installed="">
+        <header>
+            
+                
+            <div id="header_bottom_banner"></div>
+        </header>
+        
+
+
+
+<div class="commContent raceCard">
+    
+    
+    
+    
+
+
+
+
+
+    
+
+        <div class="margin_top10" style="width: 760px;">
+            
+            
+            <div class="f_fs13" style="line-height: 20px;"><span class="font_wb">第 10 場 - 雪松讓賽</span><br>2022年2月16日, 星期三, 跑馬地, 22:15<br>草地, "C" 賽道, 1200米, 好地<br>獎金: $1,570,000, 評分: 80-60, 第三班</div>
+            
+            
+        </div>
+    
+    <div id="ColSelectBody" class="rowDivFull" style="display: none;">
+        <form onsubmit="return false" class="hiddenableCtrl" style="margin: 0;">
+            <table style="width: 760px;" class="setup tableBorderBlue trBgBlue">
+                <thead>
+                    <tr>
+                        <td colspan="5">
+                            <table class="f_fs12" style="width: 100%;">
+                                <tbody><tr style="background-color: #eee;">
+                                    <td style="width: 23%;"><a href="https://racing.hkjc.com/racing/information/Chinese/racing/RaceCard.aspx?RaceDate=%20%20%20%202022/02/20&amp;Racecourse=ST&amp;RaceNo=10#" class="blue fontStyle htSetDefault">預設</a></td>
+                                    <td style="width: 23%;"><a href="https://racing.hkjc.com/racing/information/Chinese/racing/RaceCard.aspx?RaceDate=%20%20%20%202022/02/20&amp;Racecourse=ST&amp;RaceNo=10#" class="blue fontStyle htRefreshTable">重新整理</a></td>
+                                    <td style="width: 54%;">&nbsp;</td>
+                                </tr>
+                            </tbody></table>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="f_fs11"><td style="white-space: nowrap;" class="bg_e6caae f_fs13 font_wb">馬匹</td><td style="white-space: nowrap; width: 20%;"><input value="馬匹編號" type="checkbox" checked="checked" disabled="disabled">馬匹編號</td><td style="white-space: nowrap; width: 20%;"><input value="馬名" type="checkbox" checked="checked" disabled="disabled">馬名</td><td style="white-space: nowrap; width: 20%;"><input value="烙號" type="checkbox">烙號</td><td style="white-space: nowrap; width: 20%;"><input value="檔位" type="checkbox" checked="checked" disabled="disabled">檔位</td></tr>
+                    <tr class="f_fs11"><td style="white-space: nowrap; width: 20%;"></td><td style="white-space: nowrap; width: 20%;"><input value="馬主" type="checkbox">馬主</td><td style="white-space: nowrap; width: 20%;"><input value="馬齡" type="checkbox">馬齡</td><td style="white-space: nowrap; width: 20%;"><input value="性別" type="checkbox">性別</td><td style="white-space: nowrap; width: 20%;"><input value="評分" type="checkbox" checked="checked"><input value="評分" type="checkbox" style="display: none;" checked="checked">評分</td></tr>
+                    <tr class="f_fs11"><td style="white-space: nowrap; width: 20%;"></td><td style="white-space: nowrap; width: 20%;"><input value="評分+/-" type="checkbox" checked="checked">評分+/-</td><td style="white-space: nowrap; width: 20%;"><input value="負磅" type="checkbox" checked="checked">負磅</td><td style="white-space: nowrap; width: 20%;"><input value="排位體重" type="checkbox" checked="checked">排位體重</td><td style="white-space: nowrap; width: 20%;"><input value="排位體重+/-" type="checkbox">排位體重+/-</td></tr>
+                    <tr class="f_fs11"><td style="white-space: nowrap; width: 20%;"></td><td style="white-space: nowrap; width: 20%;"><input value="今季獎金" type="checkbox">今季獎金</td><td style="white-space: nowrap; width: 20%;"><input value="綵衣" type="checkbox" checked="checked">綵衣</td><td style="white-space: nowrap; width: 20%;"><input value="配備" type="checkbox" checked="checked">配備</td><td style="white-space: nowrap; width: 20%;"><input value="進口類別" type="checkbox">進口類別</td></tr>
+                    <tr class="f_fs11"><td style="white-space: nowrap; width: 20%;"></td><td style="white-space: nowrap; width: 20%;"><input value="父系" type="checkbox">父系</td><td style="white-space: nowrap; width: 20%;"><input value="母系" type="checkbox">母系</td><td style="white-space: nowrap; width: 20%;"><input value="分齡讓磅" type="checkbox">分齡讓磅</td><td style="white-space: nowrap; width: 20%;"><input value="優先參賽次序" type="checkbox" checked="checked">優先參賽次序</td></tr>
+                    <tr class="font11"></tr>
+                    <tr class="f_fs11"><td style="white-space: nowrap;" class="bg_e6caae f_fs13 font_wb">騎師</td><td style="white-space: nowrap; width: 20%;"><input value="騎師" type="checkbox" checked="checked">騎師</td><td style="white-space: nowrap; width: 20%;"><input value="可能超磅" type="checkbox">可能超磅</td><td style="white-space: nowrap; width: 20%;"></td><td style="white-space: nowrap; width: 20%;"></td></tr>
+                    <tr class="f_fs11"><td style="white-space: nowrap;" class="bg_e6caae f_fs13 font_wb">練馬師</td><td style="white-space: nowrap; width: 20%;"><input value="練馬師" type="checkbox" checked="checked">練馬師</td><td style="white-space: nowrap; width: 20%;"></td><td style="white-space: nowrap; width: 20%;"></td><td style="white-space: nowrap; width: 20%;"></td></tr>
+                    <tr class="f_fs11"><td style="white-space: nowrap;" class="bg_e6caae f_fs13 font_wb">統計資料</td><td style="white-space: nowrap; width: 20%;"><input value="6次近績" type="checkbox" checked="checked">6次近績</td><td style="white-space: nowrap; width: 20%;"><input value="最佳時間" type="checkbox">最佳時間</td><td style="white-space: nowrap; width: 20%;"></td><td style="white-space: nowrap; width: 20%;"></td></tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+
+
+        <div style="padding: 10px 0;">
+            <table style="border-spacing: 0px; padding: 1px; width: 811px;" class="tableBorderBlue tdAlignC" id="racecardlist">
+                <thead>
+                    <tr>
+                        <th class="f_fs14 font_wb f_tal">我 的 排 位 表</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <table cellpadding="1" cellspacing="1" class="starter f_tac f_fs13 draggable hiddenable">
+                                <thead>
+                                    <tr class="trBg01 tdAlignC boldFont13">
+                                        <td width="40px" style="width: 40px;">馬匹編號</td>
+                                        <td width="80px" style="width: 80px;">6次近績</td>
+                                        <td width="40px" style="width: 40px;">綵衣</td>
+                                        <td width="100px" style="width: 100px;">馬名</td>
+                                        <td width="40px" style="width: 40px; display: none;">烙號</td>
+                                        <td width="40px" style="width: 40px;">負磅</td>
+                                        <td width="135px" style="width: 135px;">騎師</td>
+                                        <td width="40px" style="width: 40px; display: none;">可能超磅</td>
+                                        <td width="40px" style="width: 40px;">檔位</td>
+                                        <td width="100px" style="width: 100px;">練馬師</td>
+                                        <td width="40px" style="width: 40px; display: none;">國際評分</td>
+                                        <td width="40px" style="width: 40px;">評分</td>
+                                        <td width="50px" style="width: 50px;">評分+/-</td>
+                                        
+                                        <td width="40px" style="width: 40px;">排位體重</td><td width="50px" style="width: 50px; display: none;">排位體重+/-</td>
+                                        <td width="40px" style="width: 40px; display: none;">最佳時間</td>
+                                        <td width="40px" style="width: 40px; display: none;">馬齡</td>
+                                        <td width="40px" style="width: 40px; display: none;">分齡讓磅</td>
+                                        <td width="40px" style="width: 40px; display: none;">性別</td>
+                                        <td width="40px" style="width: 40px; display: none;">今季獎金</td>
+                                        
+                                        <td width="50px" style="width: 50px;">優先參賽次序</td><td width="40px" style="width: 40px;">配備</td>
+                                        <td width="220px" style="width: 220px; display: none;">馬主</td>
+                                        <td width="40px" style="width: 40px; display: none;">父系</td>
+                                        <td width="40px" style="width: 40px; display: none;">母系</td>
+                                        <td width="40px" style="width: 40px; display: none;">進口類別</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                        <tr class="f_tac f_fs13">
+                                                <td>1</td>
+                                                <td>-</td>
+                                                <td><img src="./race_card_files/D024.gif" alt=""></td>
+                                                <td>
+                                                    <a href="https://racing.hkjc.com/racing/information/Chinese/Horse/Horse.aspx?HorseId=HK_2019_D024" onclick="window.open(this.href, &#39;_blank&#39;, &#39;status=no,toolbar=no,menubar=no,location=no,scrollbars=yes,resizable=yes,scrollbars=yes,left=20,top=20,width=812,height=600&#39;); return false;">以戰養戰</a><br>
+                                                    <span class="color_red">(退出)</span>
+                                                </td>
+                                                <td style="display: none;">D024</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td style="display: none;">-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td style="display: none;">-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                
+                                                <td>-</td><td style="display: none;">-</td>
+                                                <td style="display: none;">-</td>
+                                                <td style="display: none;">-</td>
+                                                <td style="display: none;">-</td>
+                                                <td style="display: none;">-</td>
+                                                <td style="display: none;">-</td>
+                                                
+                                                <td>-</td><td>-</td>
+                                                <td style="display: none;">-</td>
+                                                <td style="display: none;">-</td>
+                                                <td style="display: none;">-</td>
+                                                <td style="display: none;">-</td>
+                                        </tr>
+                                        <tr class="f_tac f_fs13">
+                                                <td style="width: 40px;">2</td>
+                                                <td style="width: 80px;">6/1/8/9/8/13</td>
+                                                <td style="width: 40px;"><img src="./race_card_files/C431.gif" alt=""></td>
+                                                <td style="width: 100px;"><a href="https://racing.hkjc.com/racing/information/Chinese/Horse/Horse.aspx?HorseId=HK_2018_C431" onclick="window.open(this.href, &#39;_blank&#39;, &#39;status=no,toolbar=no,menubar=no,location=no,scrollbars=yes,resizable=yes,scrollbars=yes,left=20,top=20,width=812,height=600&#39;); return false;">星運明爵</a></td>
+                                                <td style="width: 40px; display: none;">C431</td>
+                                                <td style="width: 40px;">127</td>
+                                                <td style="width: 135px;">
+                                                        <a href="https://racing.hkjc.com/racing/information/Chinese/Jockey/JockeyProfile.aspx?JockeyId=TEK" onclick="window.open(this.href, &#39;_blank&#39;, &#39;status=no,toolbar=no,menubar=no,location=no,scrollbars=yes,resizable=yes,scrollbars=yes,left=20,top=20,width=812,height=600&#39;); return false;">田泰安</a>
+                                                </td>
+                                                <td style="width: 40px; display: none;"></td>
+                                                <td style="width: 40px;">2</td>
+                                                <td style="width: 100px;"><a href="https://racing.hkjc.com/racing/information/Chinese/Trainers/TrainerProfile.aspx?TrainerId=FC" onclick="window.open(this.href, &#39;_blank&#39;, &#39;status=no,toolbar=no,menubar=no,location=no,scrollbars=yes,resizable=yes,scrollbars=yes,left=20,top=20,width=812,height=600&#39;); return false;">方嘉柏</a></td>
+                                                <td style="width: 40px; display: none;">-</td>
+                                                <td style="width: 40px;">74</td>
+                                                <td style="width: 50px;">0</td>
+                                                
+                                                <td style="width: 40px;">1233</td><td style="width: 50px; display: none;">-</td>
+                                                <td style="width: 40px; display: none;">1.20.84</td>
+                                                <td style="width: 40px; display: none;">6</td>
+                                                <td style="width: 40px; display: none;">-</td>
+                                                <td style="width: 40px; display: none;">閹</td>
+                                                <td style="width: 40px; display: none;">894,900</td>
+                                                
+                                                <td style="width: 50px;">+ 1</td><td style="width: 40px;"></td>
+                                                <td style="width: 220px; display: none;">游紹賢</td>
+                                                <td style="width: 40px; display: none;">Spirit Of Boom</td>
+                                                <td style="width: 40px; display: none;">Friendly Glow</td>
+                                                <td style="width: 40px; display: none;">PP</td>
+                                        </tr>
+                                        <tr class="f_tac f_fs13">
+                                                <td style="width: 40px;">3</td>
+                                                <td style="width: 80px;">2/7/1/6/6/1</td>
+                                                <td style="width: 40px;"><img src="./race_card_files/E218.gif" alt=""></td>
+                                                <td style="width: 100px;"><a href="https://racing.hkjc.com/racing/information/Chinese/Horse/Horse.aspx?HorseId=HK_2020_E218" onclick="window.open(this.href, &#39;_blank&#39;, &#39;status=no,toolbar=no,menubar=no,location=no,scrollbars=yes,resizable=yes,scrollbars=yes,left=20,top=20,width=812,height=600&#39;); return false;">合夥雄心</a></td>
+                                                <td style="width: 40px; display: none;">E218</td>
+                                                <td style="width: 40px;">124</td>
+                                                <td style="width: 135px;">
+                                                        <a href="https://racing.hkjc.com/racing/information/Chinese/Jockey/JockeyProfile.aspx?JockeyId=PZ" onclick="window.open(this.href, &#39;_blank&#39;, &#39;status=no,toolbar=no,menubar=no,location=no,scrollbars=yes,resizable=yes,scrollbars=yes,left=20,top=20,width=812,height=600&#39;); return false;">潘頓</a>
+                                                </td>
+                                                <td style="width: 40px; display: none;"></td>
+                                                <td style="width: 40px;">11</td>
+                                                <td style="width: 100px;"><a href="https://racing.hkjc.com/racing/information/Chinese/Trainers/TrainerProfile.aspx?TrainerId=CAS" onclick="window.open(this.href, &#39;_blank&#39;, &#39;status=no,toolbar=no,menubar=no,location=no,scrollbars=yes,resizable=yes,scrollbars=yes,left=20,top=20,width=812,height=600&#39;); return false;">告東尼</a></td>
+                                                <td style="width: 40px; display: none;">-</td>
+                                                <td style="width: 40px;">71</td>
+                                                <td style="width: 50px;">+2</td>
+                                                
+                                                <td style="width: 40px;">1300</td><td style="width: 50px; display: none;">-</td>
+                                                <td style="width: 40px; display: none;">1.20.94</td>
+                                                <td style="width: 40px; display: none;">4</td>
+                                                <td style="width: 40px; display: none;">-</td>
+                                                <td style="width: 40px; display: none;">閹</td>
+                                                <td style="width: 40px; display: none;">1,240,300</td>
+                                                
+                                                <td style="width: 50px;">1</td><td style="width: 40px;">CP/TT</td>
+                                                <td style="width: 220px; display: none;">劉軾瑄與方富源</td>
+                                                <td style="width: 40px; display: none;">Starspangledbanner</td>
+                                                <td style="width: 40px; display: none;">Porcellanus</td>
+                                                <td style="width: 40px; display: none;">PPG</td>
+                                        </tr>
+                                        <tr class="f_tac f_fs13">
+                                                <td style="width: 40px;">4</td>
+                                                <td style="width: 80px;">7/5/2/4/12/4</td>
+                                                <td style="width: 40px;"><img src="./race_card_files/D362.gif" alt=""></td>
+                                                <td style="width: 100px;"><a href="https://racing.hkjc.com/racing/information/Chinese/Horse/Horse.aspx?HorseId=HK_2019_D362" onclick="window.open(this.href, &#39;_blank&#39;, &#39;status=no,toolbar=no,menubar=no,location=no,scrollbars=yes,resizable=yes,scrollbars=yes,left=20,top=20,width=812,height=600&#39;); return false;">勁力十足</a></td>
+                                                <td style="width: 40px; display: none;">D362</td>
+                                                <td style="width: 40px;">124</td>
+                                                <td style="width: 135px;">
+                                                        <a href="https://racing.hkjc.com/racing/information/Chinese/Jockey/JockeyProfile.aspx?JockeyId=SHB" onclick="window.open(this.href, &#39;_blank&#39;, &#39;status=no,toolbar=no,menubar=no,location=no,scrollbars=yes,resizable=yes,scrollbars=yes,left=20,top=20,width=812,height=600&#39;); return false;">薛恩</a>
+                                                </td>
+                                                <td style="width: 40px; display: none;"></td>
+                                                <td style="width: 40px;">5</td>
+                                                <td style="width: 100px;"><a href="https://racing.hkjc.com/racing/information/Chinese/Trainers/TrainerProfile.aspx?TrainerId=WDJ" onclick="window.open(this.href, &#39;_blank&#39;, &#39;status=no,toolbar=no,menubar=no,location=no,scrollbars=yes,resizable=yes,scrollbars=yes,left=20,top=20,width=812,height=600&#39;); return false;">韋達</a></td>
+                                                <td style="width: 40px; display: none;">-</td>
+                                                <td style="width: 40px;">71</td>
+                                                <td style="width: 50px;">-2</td>
+                                                
+                                                <td style="width: 40px;">1231</td><td style="width: 50px; display: none;">-</td>
+                                                <td style="width: 40px; display: none;">1.21.21</td>
+                                                <td style="width: 40px; display: none;">4</td>
+                                                <td style="width: 40px; display: none;">-</td>
+                                                <td style="width: 40px; display: none;">閹</td>
+                                                <td style="width: 40px; display: none;">494,550</td>
+                                                
+                                                <td style="width: 50px;">+ 1</td><td style="width: 40px;">CP-/XB/B2</td>
+                                                <td style="width: 220px; display: none;">十分好運團體</td>
+                                                <td style="width: 40px; display: none;">Ocean Park</td>
+                                                <td style="width: 40px; display: none;">Pastrana</td>
+                                                <td style="width: 40px; display: none;">PPG</td>
+                                        </tr>
+                                        <tr class="f_tac f_fs13">
+                                                <td style="width: 40px;">5</td>
+                                                <td style="width: 80px;">6/4/3/9/11/14</td>
+                                                <td style="width: 40px;"><img src="./race_card_files/E199.gif" alt=""></td>
+                                                <td style="width: 100px;"><a href="https://racing.hkjc.com/racing/information/Chinese/Horse/Horse.aspx?HorseId=HK_2020_E199" onclick="window.open(this.href, &#39;_blank&#39;, &#39;status=no,toolbar=no,menubar=no,location=no,scrollbars=yes,resizable=yes,scrollbars=yes,left=20,top=20,width=812,height=600&#39;); return false;">極速飛彈</a></td>
+                                                <td style="width: 40px; display: none;">E199</td>
+                                                <td style="width: 40px;">123</td>
+                                                <td style="width: 135px;">
+                                                        <a href="https://racing.hkjc.com/racing/information/Chinese/Jockey/JockeyProfile.aspx?JockeyId=BA" onclick="window.open(this.href, &#39;_blank&#39;, &#39;status=no,toolbar=no,menubar=no,location=no,scrollbars=yes,resizable=yes,scrollbars=yes,left=20,top=20,width=812,height=600&#39;); return false;">巴度</a>
+                                                </td>
+                                                <td style="width: 40px; display: none;"></td>
+                                                <td style="width: 40px;">12</td>
+                                                <td style="width: 100px;"><a href="https://racing.hkjc.com/racing/information/Chinese/Trainers/TrainerProfile.aspx?TrainerId=YPF" onclick="window.open(this.href, &#39;_blank&#39;, &#39;status=no,toolbar=no,menubar=no,location=no,scrollbars=yes,resizable=yes,scrollbars=yes,left=20,top=20,width=812,height=600&#39;); return false;">姚本輝</a></td>
+                                                <td style="width: 40px; display: none;">-</td>
+                                                <td style="width: 40px;">70</td>
+                                                <td style="width: 50px;">-1</td>
+                                                
+                                                <td style="width: 40px;">1121</td><td style="width: 50px; display: none;">-</td>
+                                                <td style="width: 40px; display: none;">1.22.11</td>
+                                                <td style="width: 40px; display: none;">5</td>
+                                                <td style="width: 40px; display: none;">-</td>
+                                                <td style="width: 40px; display: none;">閹</td>
+                                                <td style="width: 40px; display: none;">274,750</td>
+                                                
+                                                <td style="width: 50px;">1</td><td style="width: 40px;"></td>
+                                                <td style="width: 220px; display: none;">周月琴</td>
+                                                <td style="width: 40px; display: none;">Kodiac</td>
+                                                <td style="width: 40px; display: none;">Epping</td>
+                                                <td style="width: 40px; display: none;">PP</td>
+                                        </tr>
+                                        <tr class="f_tac f_fs13">
+                                                <td style="width: 40px;">6</td>
+                                                <td style="width: 80px;">12/10/8/1/4/6</td>
+                                                <td style="width: 40px;"><img src="./race_card_files/E110.gif" alt=""></td>
+                                                <td style="width: 100px;"><a href="https://racing.hkjc.com/racing/information/Chinese/Horse/Horse.aspx?HorseId=HK_2020_E110" onclick="window.open(this.href, &#39;_blank&#39;, &#39;status=no,toolbar=no,menubar=no,location=no,scrollbars=yes,resizable=yes,scrollbars=yes,left=20,top=20,width=812,height=600&#39;); return false;">皇龍福將</a></td>
+                                                <td style="width: 40px; display: none;">E110</td>
+                                                <td style="width: 40px;">121</td>
+                                                <td style="width: 135px;">
+                                                        <a href="https://racing.hkjc.com/racing/information/Chinese/Jockey/JockeyProfile.aspx?JockeyId=BHW" onclick="window.open(this.href, &#39;_blank&#39;, &#39;status=no,toolbar=no,menubar=no,location=no,scrollbars=yes,resizable=yes,scrollbars=yes,left=20,top=20,width=812,height=600&#39;); return false;">班德禮</a>
+                                                </td>
+                                                <td style="width: 40px; display: none;"></td>
+                                                <td style="width: 40px;">1</td>
+                                                <td style="width: 100px;"><a href="https://racing.hkjc.com/racing/information/Chinese/Trainers/TrainerProfile.aspx?TrainerId=LFC" onclick="window.open(this.href, &#39;_blank&#39;, &#39;status=no,toolbar=no,menubar=no,location=no,scrollbars=yes,resizable=yes,scrollbars=yes,left=20,top=20,width=812,height=600&#39;); return false;">羅富全</a></td>
+                                                <td style="width: 40px; display: none;">-</td>
+                                                <td style="width: 40px;">68</td>
+                                                <td style="width: 50px;">-1</td>
+                                                
+                                                <td style="width: 40px;">1097</td><td style="width: 50px; display: none;">-</td>
+                                                <td style="width: 40px; display: none;">1.21.58</td>
+                                                <td style="width: 40px; display: none;">4</td>
+                                                <td style="width: 40px; display: none;">-</td>
+                                                <td style="width: 40px; display: none;">閹</td>
+                                                <td style="width: 40px; display: none;">894,900</td>
+                                                
+                                                <td style="width: 50px;">2</td><td style="width: 40px;">TT</td>
+                                                <td style="width: 220px; display: none;">區啟光、區俊康與區希敏</td>
+                                                <td style="width: 40px; display: none;">Per Incanto</td>
+                                                <td style="width: 40px; display: none;">Princess Annaliese</td>
+                                                <td style="width: 40px; display: none;">PPG</td>
+                                        </tr>
+                                        <tr class="f_tac f_fs13">
+                                                <td style="width: 40px;">7</td>
+                                                <td style="width: 80px;">11/9/7</td>
+                                                <td style="width: 40px;"><img src="./race_card_files/G232.gif" alt=""></td>
+                                                <td style="width: 100px;"><a href="https://racing.hkjc.com/racing/information/Chinese/Horse/Horse.aspx?HorseId=HK_2021_G232" onclick="window.open(this.href, &#39;_blank&#39;, &#39;status=no,toolbar=no,menubar=no,location=no,scrollbars=yes,resizable=yes,scrollbars=yes,left=20,top=20,width=812,height=600&#39;); return false;">美麗新星</a></td>
+                                                <td style="width: 40px; display: none;">G232</td>
+                                                <td style="width: 40px;">120</td>
+                                                <td style="width: 135px;">
+                                                        <a href="https://racing.hkjc.com/racing/information/Chinese/Jockey/JockeyProfile.aspx?JockeyId=BV" onclick="window.open(this.href, &#39;_blank&#39;, &#39;status=no,toolbar=no,menubar=no,location=no,scrollbars=yes,resizable=yes,scrollbars=yes,left=20,top=20,width=812,height=600&#39;); return false;">波健士</a>
+                                                </td>
+                                                <td style="width: 40px; display: none;"></td>
+                                                <td style="width: 40px;">8</td>
+                                                <td style="width: 100px;"><a href="https://racing.hkjc.com/racing/information/Chinese/Trainers/TrainerProfile.aspx?TrainerId=SJJ" onclick="window.open(this.href, &#39;_blank&#39;, &#39;status=no,toolbar=no,menubar=no,location=no,scrollbars=yes,resizable=yes,scrollbars=yes,left=20,top=20,width=812,height=600&#39;); return false;">蔡約翰</a></td>
+                                                <td style="width: 40px; display: none;">-</td>
+                                                <td style="width: 40px;">67</td>
+                                                <td style="width: 50px;">-2</td>
+                                                
+                                                <td style="width: 40px;">1215</td><td style="width: 50px; display: none;">-</td>
+                                                <td style="width: 40px; display: none;">1.22.53</td>
+                                                <td style="width: 40px; display: none;">4</td>
+                                                <td style="width: 40px; display: none;">-</td>
+                                                <td style="width: 40px; display: none;">閹</td>
+                                                <td style="width: 40px; display: none;">0</td>
+                                                
+                                                <td style="width: 50px;">1</td><td style="width: 40px;"></td>
+                                                <td style="width: 220px; display: none;">郭少明</td>
+                                                <td style="width: 40px; display: none;">Territories</td>
+                                                <td style="width: 40px; display: none;">Folly Bridge</td>
+                                                <td style="width: 40px; display: none;">PP</td>
+                                        </tr>
+                                        <tr class="f_tac f_fs13">
+                                                <td style="width: 40px;">8</td>
+                                                <td style="width: 80px;">3/5/1/2/2/1</td>
+                                                <td style="width: 40px;"><img src="./race_card_files/E090.gif" alt=""></td>
+                                                <td style="width: 100px;"><a href="https://racing.hkjc.com/racing/information/Chinese/Horse/Horse.aspx?HorseId=HK_2020_E090" onclick="window.open(this.href, &#39;_blank&#39;, &#39;status=no,toolbar=no,menubar=no,location=no,scrollbars=yes,resizable=yes,scrollbars=yes,left=20,top=20,width=812,height=600&#39;); return false;">駿益善</a></td>
+                                                <td style="width: 40px; display: none;">E090</td>
+                                                <td style="width: 40px;">119</td>
+                                                <td style="width: 135px;">
+                                                        <a href="https://racing.hkjc.com/racing/information/Chinese/Jockey/JockeyProfile.aspx?JockeyId=PMF" onclick="window.open(this.href, &#39;_blank&#39;, &#39;status=no,toolbar=no,menubar=no,location=no,scrollbars=yes,resizable=yes,scrollbars=yes,left=20,top=20,width=812,height=600&#39;); return false;">潘明輝(-2)</a>
+                                                </td>
+                                                <td style="width: 40px; display: none;"></td>
+                                                <td style="width: 40px;">14</td>
+                                                <td style="width: 100px;"><a href="https://racing.hkjc.com/racing/information/Chinese/Trainers/TrainerProfile.aspx?TrainerId=SCS" onclick="window.open(this.href, &#39;_blank&#39;, &#39;status=no,toolbar=no,menubar=no,location=no,scrollbars=yes,resizable=yes,scrollbars=yes,left=20,top=20,width=812,height=600&#39;); return false;">沈集成</a></td>
+                                                <td style="width: 40px; display: none;">-</td>
+                                                <td style="width: 40px;">66</td>
+                                                <td style="width: 50px;">0</td>
+                                                
+                                                <td style="width: 40px;">1215</td><td style="width: 50px; display: none;">-</td>
+                                                <td style="width: 40px; display: none;">1.21.99</td>
+                                                <td style="width: 40px; display: none;">5</td>
+                                                <td style="width: 40px; display: none;">-</td>
+                                                <td style="width: 40px; display: none;">閹</td>
+                                                <td style="width: 40px; display: none;">235,500</td>
+                                                
+                                                <td style="width: 50px;">+ 1</td><td style="width: 40px;">B</td>
+                                                <td style="width: 220px; display: none;">陳和平與吳頴璇</td>
+                                                <td style="width: 40px; display: none;">Per Incanto</td>
+                                                <td style="width: 40px; display: none;">Kalamanda</td>
+                                                <td style="width: 40px; display: none;">PPG</td>
+                                        </tr>
+                                        <tr class="f_tac f_fs13">
+                                                <td style="width: 40px;">9</td>
+                                                <td style="width: 80px;">6/2/6/3/6/3</td>
+                                                <td style="width: 40px;"><img src="./race_card_files/E223.gif" alt=""></td>
+                                                <td style="width: 100px;"><a href="https://racing.hkjc.com/racing/information/Chinese/Horse/Horse.aspx?HorseId=HK_2020_E223" onclick="window.open(this.href, &#39;_blank&#39;, &#39;status=no,toolbar=no,menubar=no,location=no,scrollbars=yes,resizable=yes,scrollbars=yes,left=20,top=20,width=812,height=600&#39;); return false;">勇趣</a></td>
+                                                <td style="width: 40px; display: none;">E223</td>
+                                                <td style="width: 40px;">119</td>
+                                                <td style="width: 135px;">
+                                                        <a href="https://racing.hkjc.com/racing/information/Chinese/Jockey/JockeyProfile.aspx?JockeyId=FEL" onclick="window.open(this.href, &#39;_blank&#39;, &#39;status=no,toolbar=no,menubar=no,location=no,scrollbars=yes,resizable=yes,scrollbars=yes,left=20,top=20,width=812,height=600&#39;); return false;">霍宏聲</a>
+                                                </td>
+                                                <td style="width: 40px; display: none;"></td>
+                                                <td style="width: 40px;">9</td>
+                                                <td style="width: 100px;"><a href="https://racing.hkjc.com/racing/information/Chinese/Trainers/TrainerProfile.aspx?TrainerId=GR" onclick="window.open(this.href, &#39;_blank&#39;, &#39;status=no,toolbar=no,menubar=no,location=no,scrollbars=yes,resizable=yes,scrollbars=yes,left=20,top=20,width=812,height=600&#39;); return false;">高伯新</a></td>
+                                                <td style="width: 40px; display: none;">-</td>
+                                                <td style="width: 40px;">66</td>
+                                                <td style="width: 50px;">0</td>
+                                                
+                                                <td style="width: 40px;">1151</td><td style="width: 50px; display: none;">-</td>
+                                                <td style="width: 40px; display: none;">1.21.39</td>
+                                                <td style="width: 40px; display: none;">5</td>
+                                                <td style="width: 40px; display: none;">-</td>
+                                                <td style="width: 40px; display: none;">閹</td>
+                                                <td style="width: 40px; display: none;">525,950</td>
+                                                
+                                                <td style="width: 50px;">+ 1</td><td style="width: 40px;"></td>
+                                                <td style="width: 220px; display: none;">黃頌顯與黃子超</td>
+                                                <td style="width: 40px; display: none;">Dandy Man</td>
+                                                <td style="width: 40px; display: none;">Hidden Belief</td>
+                                                <td style="width: 40px; display: none;">PP</td>
+                                        </tr>
+                                        <tr class="f_tac f_fs13">
+                                                <td style="width: 40px;">10</td>
+                                                <td style="width: 80px;">9/12/11</td>
+                                                <td style="width: 40px;"><img src="./race_card_files/G112.gif" alt=""></td>
+                                                <td style="width: 100px;"><a href="https://racing.hkjc.com/racing/information/Chinese/Horse/Horse.aspx?HorseId=HK_2021_G112" onclick="window.open(this.href, &#39;_blank&#39;, &#39;status=no,toolbar=no,menubar=no,location=no,scrollbars=yes,resizable=yes,scrollbars=yes,left=20,top=20,width=812,height=600&#39;); return false;">金發銀發</a></td>
+                                                <td style="width: 40px; display: none;">G112</td>
+                                                <td style="width: 40px;">118</td>
+                                                <td style="width: 135px;">
+                                                        <a href="https://racing.hkjc.com/racing/information/Chinese/Jockey/JockeyProfile.aspx?JockeyId=MDA" onclick="window.open(this.href, &#39;_blank&#39;, &#39;status=no,toolbar=no,menubar=no,location=no,scrollbars=yes,resizable=yes,scrollbars=yes,left=20,top=20,width=812,height=600&#39;); return false;">莫丹尼</a>
+                                                </td>
+                                                <td style="width: 40px; display: none;"></td>
+                                                <td style="width: 40px;">3</td>
+                                                <td style="width: 100px;"><a href="https://racing.hkjc.com/racing/information/Chinese/Trainers/TrainerProfile.aspx?TrainerId=LKW" onclick="window.open(this.href, &#39;_blank&#39;, &#39;status=no,toolbar=no,menubar=no,location=no,scrollbars=yes,resizable=yes,scrollbars=yes,left=20,top=20,width=812,height=600&#39;); return false;">呂健威</a></td>
+                                                <td style="width: 40px; display: none;">-</td>
+                                                <td style="width: 40px;">65</td>
+                                                <td style="width: 50px;">-2</td>
+                                                
+                                                <td style="width: 40px;">1065</td><td style="width: 50px; display: none;">-</td>
+                                                <td style="width: 40px; display: none;">1.22.64</td>
+                                                <td style="width: 40px; display: none;">4</td>
+                                                <td style="width: 40px; display: none;">-</td>
+                                                <td style="width: 40px; display: none;">閹</td>
+                                                <td style="width: 40px; display: none;">0</td>
+                                                
+                                                <td style="width: 50px;">1</td><td style="width: 40px;">B/H</td>
+                                                <td style="width: 220px; display: none;">羅用冠</td>
+                                                <td style="width: 40px; display: none;">Iffraaj</td>
+                                                <td style="width: 40px; display: none;">Kitt Ann Miss</td>
+                                                <td style="width: 40px; display: none;">PP</td>
+                                        </tr>
+                                        <tr class="f_tac f_fs13">
+                                                <td style="width: 40px;">11</td>
+                                                <td style="width: 80px;">7/11/7/1/12/8</td>
+                                                <td style="width: 40px;"><img src="./race_card_files/B385.gif" alt=""></td>
+                                                <td style="width: 100px;"><a href="https://racing.hkjc.com/racing/information/Chinese/Horse/Horse.aspx?HorseId=HK_2017_B385" onclick="window.open(this.href, &#39;_blank&#39;, &#39;status=no,toolbar=no,menubar=no,location=no,scrollbars=yes,resizable=yes,scrollbars=yes,left=20,top=20,width=812,height=600&#39;); return false;">一舖縱橫</a></td>
+                                                <td style="width: 40px; display: none;">B385</td>
+                                                <td style="width: 40px;">116</td>
+                                                <td style="width: 135px;">
+                                                        <a href="https://racing.hkjc.com/racing/information/Chinese/Jockey/JockeyProfile.aspx?JockeyId=HAA" onclick="window.open(this.href, &#39;_blank&#39;, &#39;status=no,toolbar=no,menubar=no,location=no,scrollbars=yes,resizable=yes,scrollbars=yes,left=20,top=20,width=812,height=600&#39;); return false;">賀銘年</a>
+                                                </td>
+                                                <td style="width: 40px; display: none;">1</td>
+                                                <td style="width: 40px;">4</td>
+                                                <td style="width: 100px;"><a href="https://racing.hkjc.com/racing/information/Chinese/Trainers/TrainerProfile.aspx?TrainerId=YCH" onclick="window.open(this.href, &#39;_blank&#39;, &#39;status=no,toolbar=no,menubar=no,location=no,scrollbars=yes,resizable=yes,scrollbars=yes,left=20,top=20,width=812,height=600&#39;); return false;">葉楚航</a></td>
+                                                <td style="width: 40px; display: none;">-</td>
+                                                <td style="width: 40px;">63</td>
+                                                <td style="width: 50px;">-1</td>
+                                                
+                                                <td style="width: 40px;"></td><td style="width: 50px; display: none;">-</td>
+                                                <td style="width: 40px; display: none;">1.21.11</td>
+                                                <td style="width: 40px; display: none;">7</td>
+                                                <td style="width: 40px; display: none;">-</td>
+                                                <td style="width: 40px; display: none;">閹</td>
+                                                <td style="width: 40px; display: none;">592,800</td>
+                                                
+                                                <td style="width: 50px;">1</td><td style="width: 40px;">TT</td>
+                                                <td style="width: 220px; display: none;">陳偉材、陳秉志與黃子華</td>
+                                                <td style="width: 40px; display: none;">Reward For Effort</td>
+                                                <td style="width: 40px; display: none;">Disturbingthepeace</td>
+                                                <td style="width: 40px; display: none;">PP</td>
+                                        </tr>
+                                        <tr class="f_tac f_fs13">
+                                                <td style="width: 40px;">12</td>
+                                                <td style="width: 80px;">-</td>
+                                                <td style="width: 40px;"><img src="./race_card_files/G191.gif" alt=""></td>
+                                                <td style="width: 100px;"><a href="https://racing.hkjc.com/racing/information/Chinese/Horse/Horse.aspx?HorseId=HK_2021_G191" onclick="window.open(this.href, &#39;_blank&#39;, &#39;status=no,toolbar=no,menubar=no,location=no,scrollbars=yes,resizable=yes,scrollbars=yes,left=20,top=20,width=812,height=600&#39;); return false;">共同富裕</a></td>
+                                                <td style="width: 40px; display: none;">G191</td>
+                                                <td style="width: 40px;">116</td>
+                                                <td style="width: 135px;">
+                                                        <a href="https://racing.hkjc.com/racing/information/Chinese/Jockey/JockeyProfile.aspx?JockeyId=MHT" onclick="window.open(this.href, &#39;_blank&#39;, &#39;status=no,toolbar=no,menubar=no,location=no,scrollbars=yes,resizable=yes,scrollbars=yes,left=20,top=20,width=812,height=600&#39;); return false;">巫顯東(-2)</a>
+                                                </td>
+                                                <td style="width: 40px; display: none;"></td>
+                                                <td style="width: 40px;">7</td>
+                                                <td style="width: 100px;"><a href="https://racing.hkjc.com/racing/information/Chinese/Trainers/TrainerProfile.aspx?TrainerId=YTP" onclick="window.open(this.href, &#39;_blank&#39;, &#39;status=no,toolbar=no,menubar=no,location=no,scrollbars=yes,resizable=yes,scrollbars=yes,left=20,top=20,width=812,height=600&#39;); return false;">容天鵬</a></td>
+                                                <td style="width: 40px; display: none;">-</td>
+                                                <td style="width: 40px;">63</td>
+                                                <td style="width: 50px;">-</td>
+                                                
+                                                <td style="width: 40px;"></td><td style="width: 50px; display: none;">-</td>
+                                                <td style="width: 40px; display: none;"></td>
+                                                <td style="width: 40px; display: none;">5</td>
+                                                <td style="width: 40px; display: none;">-</td>
+                                                <td style="width: 40px; display: none;">閹</td>
+                                                <td style="width: 40px; display: none;">0</td>
+                                                
+                                                <td style="width: 50px;">+ 1</td><td style="width: 40px;"></td>
+                                                <td style="width: 220px; display: none;">蘇啟聲</td>
+                                                <td style="width: 40px; display: none;">Deep Impact</td>
+                                                <td style="width: 40px; display: none;">Miss Ivanovic</td>
+                                                <td style="width: 40px; display: none;">PP</td>
+                                        </tr>
+                                        <tr class="f_tac f_fs13">
+                                                <td style="width: 40px;">13</td>
+                                                <td style="width: 80px;">5/2/4/3/2/4</td>
+                                                <td style="width: 40px;"><img src="./race_card_files/E109.gif" alt=""></td>
+                                                <td style="width: 100px;"><a href="https://racing.hkjc.com/racing/information/Chinese/Horse/Horse.aspx?HorseId=HK_2020_E109" onclick="window.open(this.href, &#39;_blank&#39;, &#39;status=no,toolbar=no,menubar=no,location=no,scrollbars=yes,resizable=yes,scrollbars=yes,left=20,top=20,width=812,height=600&#39;); return false;">金像非凡</a></td>
+                                                <td style="width: 40px; display: none;">E109</td>
+                                                <td style="width: 40px;">116</td>
+                                                <td style="width: 135px;">
+                                                        <a href="https://racing.hkjc.com/racing/information/Chinese/Jockey/JockeyProfile.aspx?JockeyId=CML" onclick="window.open(this.href, &#39;_blank&#39;, &#39;status=no,toolbar=no,menubar=no,location=no,scrollbars=yes,resizable=yes,scrollbars=yes,left=20,top=20,width=812,height=600&#39;); return false;">蔡明紹</a>
+                                                </td>
+                                                <td style="width: 40px; display: none;"></td>
+                                                <td style="width: 40px;">13</td>
+                                                <td style="width: 100px;"><a href="https://racing.hkjc.com/racing/information/Chinese/Trainers/TrainerProfile.aspx?TrainerId=LFC" onclick="window.open(this.href, &#39;_blank&#39;, &#39;status=no,toolbar=no,menubar=no,location=no,scrollbars=yes,resizable=yes,scrollbars=yes,left=20,top=20,width=812,height=600&#39;); return false;">羅富全</a></td>
+                                                <td style="width: 40px; display: none;">-</td>
+                                                <td style="width: 40px;">63</td>
+                                                <td style="width: 50px;">0</td>
+                                                
+                                                <td style="width: 40px;"></td><td style="width: 50px; display: none;">-</td>
+                                                <td style="width: 40px; display: none;">1.21.69</td>
+                                                <td style="width: 40px; display: none;">4</td>
+                                                <td style="width: 40px; display: none;">-</td>
+                                                <td style="width: 40px; display: none;">閹</td>
+                                                <td style="width: 40px; display: none;">873,550</td>
+                                                
+                                                <td style="width: 50px;">1</td><td style="width: 40px;">CP</td>
+                                                <td style="width: 220px; display: none;">雅柏勤團體</td>
+                                                <td style="width: 40px; display: none;">Per Incanto</td>
+                                                <td style="width: 40px; display: none;">Centree</td>
+                                                <td style="width: 40px; display: none;">PPG</td>
+                                        </tr>
+                                        <tr class="f_tac f_fs13">
+                                                <td style="width: 40px;">14</td>
+                                                <td style="width: 80px;">5/4/13/11</td>
+                                                <td style="width: 40px;"><img src="./race_card_files/G078.gif" alt=""></td>
+                                                <td style="width: 100px;"><a href="https://racing.hkjc.com/racing/information/Chinese/Horse/Horse.aspx?HorseId=HK_2021_G078" onclick="window.open(this.href, &#39;_blank&#39;, &#39;status=no,toolbar=no,menubar=no,location=no,scrollbars=yes,resizable=yes,scrollbars=yes,left=20,top=20,width=812,height=600&#39;); return false;">綫路神驊</a></td>
+                                                <td style="width: 40px; display: none;">G078</td>
+                                                <td style="width: 40px;">114</td>
+                                                <td style="width: 135px;">
+                                                        <a href="https://racing.hkjc.com/racing/information/Chinese/Jockey/JockeyProfile.aspx?JockeyId=YML" onclick="window.open(this.href, &#39;_blank&#39;, &#39;status=no,toolbar=no,menubar=no,location=no,scrollbars=yes,resizable=yes,scrollbars=yes,left=20,top=20,width=812,height=600&#39;); return false;">楊明綸</a>
+                                                </td>
+                                                <td style="width: 40px; display: none;"></td>
+                                                <td style="width: 40px;">10</td>
+                                                <td style="width: 100px;"><a href="https://racing.hkjc.com/racing/information/Chinese/Trainers/TrainerProfile.aspx?TrainerId=MKL" onclick="window.open(this.href, &#39;_blank&#39;, &#39;status=no,toolbar=no,menubar=no,location=no,scrollbars=yes,resizable=yes,scrollbars=yes,left=20,top=20,width=812,height=600&#39;); return false;">文家良</a></td>
+                                                <td style="width: 40px; display: none;">-</td>
+                                                <td style="width: 40px;">61</td>
+                                                <td style="width: 50px;">-1</td>
+                                                
+                                                <td style="width: 40px;"></td><td style="width: 50px; display: none;">-</td>
+                                                <td style="width: 40px; display: none;">1.21.90</td>
+                                                <td style="width: 40px; display: none;">4</td>
+                                                <td style="width: 40px; display: none;">-</td>
+                                                <td style="width: 40px; display: none;">閹</td>
+                                                <td style="width: 40px; display: none;">149,150</td>
+                                                
+                                                <td style="width: 50px;">+ 1</td><td style="width: 40px;"></td>
+                                                <td style="width: 220px; display: none;">張根棠</td>
+                                                <td style="width: 40px; display: none;">El Roca</td>
+                                                <td style="width: 40px; display: none;">Summalucky</td>
+                                                <td style="width: 40px; display: none;">PP</td>
+                                        </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+
+        <div style="padding: 5px 0;">
+            <table style="border-spacing:1px; border-collapse: separate; width:760px;" border="0" class="tableBorderBlue" id="standbylist">
+                <thead>
+                    <tr>
+                        <th class="f_tal" colspan="10">後 備 馬 匹</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="f_fs13 f_tac bg_e6caae">
+                        <td style="width: 40px"><b>編號</b></td>
+                        <td style="width: 115px"><b>馬名</b></td>
+                        <td style="width: 100px"><b>排位體重</b></td>
+                        <td style="width: 50px"><b>負磅</b></td>
+                        <td style="width: 60px"><b>評分</b></td>
+                        <td style="width: 50px"><b>馬齡</b></td>
+                        <td style="width: 105px"><b>6次近績</b></td>
+                        <td style="width: 130px"><b>練馬師</b></td>
+                        <td style="width: 50px"><b>優先參賽次序</b></td>
+                        <td style="width: 60px"><b>配備</b></td>
+                    </tr>
+                        <tr class="bg_white f_tac f_fs13">
+                            <td class="TdScratch">1</td>
+                            <td class="TdScratch">
+                                <a href="https://racing.hkjc.com/racing/information/Chinese/Horse/Horse.aspx?HorseId=HK_2020_E457" onclick="window.open(this.href, &#39;_blank&#39;, &#39;status=no,toolbar=no,menubar=no,location=no,scrollbars=yes,resizable=yes,scrollbars=yes,left=20,top=20,width=812,height=600&#39;); return false;">勝利之皇</a>
+                            </td>
+                            <td></td>
+                            <td>114</td>
+                            <td>61</td>
+                            <td>4</td>
+                            <td>6/14/11</td>
+                            <td>
+                                <a href="https://racing.hkjc.com/racing/information/Chinese/Trainers/TrainerProfile.aspx?TrainerId=SWY" onclick="window.open(this.href, &#39;_blank&#39;, &#39;status=no,toolbar=no,menubar=no,location=no,scrollbars=yes,resizable=yes,scrollbars=yes,left=20,top=20,width=812,height=600&#39;); return false;">蘇偉賢</a>
+                            </td>
+                            <td>1</td>
+                            <td></td>
+                        </tr>
+                        <tr class="bg_white f_tac f_fs13">
+                            <td class="TdScratch">2</td>
+                            <td class="TdScratch">
+                                <a href="https://racing.hkjc.com/racing/information/Chinese/Horse/Horse.aspx?HorseId=HK_2019_D144" onclick="window.open(this.href, &#39;_blank&#39;, &#39;status=no,toolbar=no,menubar=no,location=no,scrollbars=yes,resizable=yes,scrollbars=yes,left=20,top=20,width=812,height=600&#39;); return false;">駿皇星</a>
+                            </td>
+                            <td></td>
+                            <td>120</td>
+                            <td>67</td>
+                            <td>6</td>
+                            <td>6/2/4/1/14/6</td>
+                            <td>
+                                <a href="https://racing.hkjc.com/racing/information/Chinese/Trainers/TrainerProfile.aspx?TrainerId=MKL" onclick="window.open(this.href, &#39;_blank&#39;, &#39;status=no,toolbar=no,menubar=no,location=no,scrollbars=yes,resizable=yes,scrollbars=yes,left=20,top=20,width=812,height=600&#39;); return false;">文家良</a>
+                            </td>
+                            <td>2</td>
+                            <td>CP/TT</td>
+                        </tr>
+                </tbody>
+            </table>
+        </div>
+
+    
+
+    
+
+</div>
+
+<script type="text/javascript" src="./race_card_files/JQueryCookie.js.download"></script>
+<script type="text/javascript" src="./race_card_files/DragTable.js.download" "=""></script>
+
+    <script type="text/javascript" src="./race_card_files/sdceo_config.js.download"></script>
+    <script type="text/javascript" src="./race_card_files/sdceo_core.js.download"></script>
+    <script>
+        function sdceo_bannerAd_EWRRSR1C_transform(sdceoDataObj) {
+            var bannerStr = "";
+            sdceoDataObj.BannerAdList.forEach(function (item) {
+                bannerStr += '<div>';
+                if (item.url) {
+                    bannerStr += '<a href="' + encodeURI(item.url) + '" target="' + item.target + '">';
+                    bannerStr += '<img style="border: 0px; width: ' + item.imageLargeWidth + 'px; height: ' + item.imageLargeHeight + 'px;" title="' + item.title + '" src="' + item.imagePathLarge + '" alt="' + item.imageAltText + '" />';
+                    bannerStr += '</a>';
+                }
+                else {
+                    bannerStr += '<img style="border: 0px; width: ' + item.imageLargeWidth + 'px; height: ' + item.imageLargeHeight + 'px;" title="' + item.title + '" src="' + item.imagePathLarge + '" alt="' + item.imageAltText + '" />';
+                }
+                bannerStr += '</div>';
+            });
+
+            document.getElementById("sdceo_zone_EWRRSR1C_div").innerHTML = bannerStr;
+        }
+
+        var script_EWRRSR1C = document.createElement('script');
+        script_EWRRSR1C.onload = function () {
+            sdceo_bannerAd_EWRRSR1C_transform(sdceo_getZoneBanner_EWRRSR1C(1));
+        };
+        script_EWRRSR1C.src = "/bannerad/js/zone/sdceo_zone_EWRRSR1C_banner.js?date=" + sdceo_util_getNow();
+        document.head.appendChild(script_EWRRSR1C);
+    </script>
+
+        
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $(".subNav").find("li").each(function () {
+                    if ($(this).children("a:first").text() == "Racing Info (Local)") {
+                        var secondNav = $(this).children("a:first").siblings("div[class='pullmenu clearfix']:first").children("div[class='content']");
+                        $("#header_bottom_banner").html(secondNav.html());
+                        $("#header_bottom_banner dl").addClass("f_clear");
+                        // $("#header_bottom_banner dl").append("<dt style='clear:both'></dt>");
+                        $("#header_bottom_banner>dl>dt>a").each(function () {
+                            $(this).prev().hide();
+                            var a_parent = $(this).parent();
+                            a_parent.mouseover(function () {
+                                var thirdNavDiv = $(this).children("div:first");
+                                thirdNavDiv.show();
+                                thirdNavDiv.attr("id", "third_nav");
+                                thirdNavDiv.removeClass();
+                            });
+                            a_parent.mouseout(function () {
+                                $(this).children("div:first").hide();
+                            });
+
+                        });
+
+                    }
+                });
+            });
+        </script>
+        
+
+        <!-- lib -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jasmine/4.0.0/jasmine.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/4.0.0/jasmine.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/4.0.0/jasmine-html.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/4.0.0/boot0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/4.0.0/boot1.min.js"></script>
+
+        
+        <!-- your own code -->
+        <script type="text/javascript" src="../race_card.js"></script>  <!-- tampermonkey code -->
+        <script type="text/javascript" src="/race_card_test.js"></script>  <!-- your own testing code -->
+
+        
+
+
+
+</body></html>

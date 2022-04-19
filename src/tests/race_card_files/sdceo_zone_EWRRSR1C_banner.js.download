@@ -1,0 +1,38 @@
+function sdceo_getZoneBanner_EWRRSR1C(numOfAd) 
+{
+	var useDefault = false;
+	var defaultBannerObj = JSON.parse('{"BannerAdList":[]}');
+defaultBannerObj['BannerAdList'].push({"advertiser":"","imageAltText":"","campaignID":"EWRRSR1C_defaultImg","bannerName":"defaultImg","weight":1,"description":"","imageSmallWidth":"","title":"","creativeID":"EWRRSR1C_defaultImg","url":"","target":"_blank","imagePathLarge":"/bannerad/images/zone/EWRRSR1C/EWRRSR1C_default_298x58.jpg","imageLargeHeight":"58","targetWindowParameters":"","imagePathSmall":"/bannerad/images/zone/EWRRSR1C","imageLargeWidth":"298","onlineTime":"1970/01/01 00:00","offlineTime":"2999/12/31 23:59","imageSmallHeight":""});
+
+	
+	
+	var zoneBannerObj = JSON.parse('{"BannerAdList":[]}');
+	var zoneBannerObjActive = JSON.parse('{"BannerAdList":[]}');
+	var zoneBannerObjReturn = JSON.parse('{"BannerAdList":[]}');
+	 
+	 
+	zoneBannerObj['BannerAdList'].push({"advertiser":"REM","imageAltText":"","campaignID":"REM_HKGCQSJCgeneric-2022","bannerName":"花旗銀行香港金盃","weight":2,"description":"","imageSmallWidth":"","title":"","creativeID":"REM_HKGCQSJCgeneric-2022_05","url":"https://campaigns.hkjc.com/citi-hkgold-qsj/ch/","target":"_blank","imagePathLarge":"/bannerad/images/banner/REM_HKGCQSJCgeneric-2022_05/2022-Citi-HK-Gold-generic-298-58-c.jpg","imageLargeHeight":"58","imagePathSmall":"/bannerad/images/banner/REM_HKGCQSJCgeneric-2022_05","targetWindowParameters":"","onlineTime":"2022/02/07 17:00","imageLargeWidth":"298","offlineTime":"2022/02/20 17:50","imageSmallHeight":""});
+	zoneBannerObj['BannerAdList'].push({"advertiser":"REM","imageAltText":"","campaignID":"REM_HKCCgeneric-2022","bannerName":"香港經典盃","weight":1,"description":"","imageSmallWidth":"","title":"","creativeID":"REM_HKCCgeneric-2022_07","url":"https://campaigns.hkjc.com/hk-classic-cup/ch/","target":"_blank","imagePathLarge":"/bannerad/images/banner/REM_HKCCgeneric-2022_07/2022-classic-cup-generic-298-58-c.jpg","imageLargeHeight":"58","imagePathSmall":"/bannerad/images/banner/REM_HKCCgeneric-2022_07","targetWindowParameters":"","onlineTime":"2022/02/14 17:00","imageLargeWidth":"298","offlineTime":"2022/02/27 17:50","imageSmallHeight":""});
+	zoneBannerObj['BannerAdList'].push({"advertiser":"REM","imageAltText":"","campaignID":"REM_HKGCQSJCgeneric-2022","bannerName":"女皇銀禧紀念盃","weight":2,"description":"","imageSmallWidth":"","title":"","creativeID":"REM_HKGCQSJCgeneric-2022_13","url":"https://campaigns.hkjc.com/citi-hkgold-qsj/ch/","target":"_blank","imagePathLarge":"/bannerad/images/banner/REM_HKGCQSJCgeneric-2022_13/2022-QSJ-generic-298-58-c.jpg","imageLargeHeight":"58","imagePathSmall":"/bannerad/images/banner/REM_HKGCQSJCgeneric-2022_13","targetWindowParameters":"","onlineTime":"2022/02/07 17:00","imageLargeWidth":"298","offlineTime":"2022/02/20 17:50","imageSmallHeight":""});
+
+	 
+	var count=0;
+	for(var i=0; i<zoneBannerObj.BannerAdList.length; i++)
+	{
+		if(sdceo_isDateValid(zoneBannerObj.BannerAdList[i]))
+		{
+			zoneBannerObjActive['BannerAdList'].push(zoneBannerObj.BannerAdList[i]);
+		}
+	}
+	
+	if(zoneBannerObjActive['BannerAdList'].length == 0 )
+	{
+		if(useDefault){
+			zoneBannerObjActive['BannerAdList'].push(defaultBannerObj.BannerAdList[0]);
+		}
+	}
+	
+	zoneBannerObjReturn = sdceo_util_getNOutOfM(numOfAd,zoneBannerObjActive,zoneBannerObjReturn,"EWRRSR1C");
+	
+	return zoneBannerObjReturn;
+}
